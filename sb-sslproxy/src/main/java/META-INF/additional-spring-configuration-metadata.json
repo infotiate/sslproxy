@@ -1,0 +1,62 @@
+{"properties": [
+  {
+    "name": "server.ssl.sendclientcertifiate",
+    "type": "java.lang.String",
+    "description": "A description for 'server.ssl.sendclientcertifiate'"
+  },
+  {
+    "name": "server.ssl.fwdclientcertifiate",
+    "type": "java.lang.String",
+    "description": "A description for 'server.ssl.fwdclientcertifiate'"
+  },
+  {
+    "name": "server.ssl.fwdclientcertifiateformat",
+    "type": "java.lang.String",
+    "description": "A description for 'server.ssl.fwdclientcertifiateformat'"
+  },
+  {
+    "name": "server.ssl.enableocspcheck",
+    "type": "java.lang.String",
+    "description": "A description for 'server.ssl.enableocspcheck'"
+  },
+  {
+    "name": "server.ssl.certificatelinelength",
+    "type": "java.lang.String",
+    "description": "A description for 'server.ssl.certificatelinelength'"
+  },
+  {
+    "name": "server.ssl.validateleafcertonly",
+    "type": "java.lang.String",
+    "description": "A description for 'server.ssl.validateleafcertonly'"
+  },
+  {
+    "name": "server.ssl.ignoreocspcheckresults",
+    "type": "java.lang.String",
+    "description": "A description for 'server.ssl.ignoreocspcheckresults'"
+  },
+  {
+    "name": "server.ssl.failurestatuscode",
+    "type": "java.lang.String",
+    "description": "A description for 'server.ssl.failurestatuscode'"
+  },
+  {
+    "name": "server.ssl.failuremessage",
+    "type": "java.lang.String",
+    "description": "A description for 'server.ssl.failuremessage'"
+  },
+  {
+    "name": "server.ssl.allowedhttpmethods",
+    "type": "java.lang.String[]",
+    "description": "A description for 'server.ssl.allowedhttpmethods'"
+  },
+  {
+    "name": "server.allowedhttpmethods",
+    "type": "java.lang.String",
+    "description": "A description for 'server.allowedhttpmethods'"
+  }
+]}{
+    "name": "server.allowedhttpmethods",
+    "type": "java.lang.String",
+    "description": "A description for 'server.allowedhttpmethods'"
+  }
+]}

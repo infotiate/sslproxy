@@ -1,0 +1,61 @@
+info:
+  component: Infotiate SSL Proxy
+endpoints:
+  restart:
+    enabled: true
+server:
+  port: 7979
+  allowedhttpmethods: GET,POST,PUT,OPTIONS,DELETE
+  ssl:
+    key-store-provider: SUN
+    trust-store-provider: SUN
+    enabled: true
+    #Keep files outside on the host so that keys can be changed without redeployment
+    key-store: keystore.jks
+    key-password: keypassword
+    key-store-password: keystorepassword
+    key-alias: aliasname
+    enabled-protocols:
+    - TLSv1.2
+    client-auth: NEED
+    #TODO-Keep files outside that keys can be changed without redeployment
+    trust-store: src/main/resources/trust.jks
+    trust-store-password: changeit
+    ciphers:
+    - TLS_DHE_DSS_WITH_AES_256_CBC_SHA256
+    - TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384
+    - TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+    - TLS_DHE_DSS_WITH_AES_128_CBC_SHA256
+    - TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+    fwdclientcertifiate: true
+    #Base 64 encoded format
+    fwdclientcertifiateformat: PEM
+    enableocspcheck: true
+    #put new line breaks in base 64 encoded certificate -1 for no line brakes
+    certificatelinelength: 64
+    validateleafcertonly: true
+    ignoreocspcheckresults: false
+    failurestatuscode: 403
+    failuremessage: Forbidden
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.web: INFO
+    
+management:
+  endpoint:
+    shutdown:
+      enabled: true
+zuul:
+  routes:
+    elb:
+      path: /**
+      sensitiveHeaders:
+      #Point it to the load balancer URL
+      url: https://www.loadbalancer.com
+  trace-request-body: true
+  ssl-hostname-validation-enabled: false
+  host:
+    socket-timeout-millis: 2000
+ 
+ 

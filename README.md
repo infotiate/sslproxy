@@ -12,3 +12,6 @@ During our testing we have faced several challenges with commercial grade firewa
  
  - Ability to pass certificate chain including intermediate CAs to downstream system for example AWS ALBs does not provide this capability. 
  - Many of the open source systems such as HAPROXY and NGINX does provide but only the leaf certificate is passed. Code can be extended however it will be very difficult to maintain the large code base that these systems have
+ 
+ **Deployment model on AWS**
+ ![](SSLProxyArchitecture.png)

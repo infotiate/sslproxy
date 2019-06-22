@@ -14,4 +14,5 @@ During our testing we have faced several challenges with commercial grade firewa
  - Many of the open source systems such as HAPROXY and NGINX does provide but only the leaf certificate is passed. Code can be extended however it will be very difficult to maintain the large code base that these systems have
  
  **Deployment model on AWS**
+ 
  ![](SSLProxyArchitecture.png)

@@ -1,4 +1,4 @@
-# Using Zuul as SSL Proxy with OCSP
+# Infotiate SSL Proxy - Using Zuul as SSL Proxy with OCSP
 We created this simple spring boot application using Zuul proxy to utilize native Java 9 support for [OCSP stapling](https://en.wikipedia.org/wiki/OCSP_stapling) and [OCSP](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) check during certificate path validation. The application support following features
 
  - Reverse proxy with TLS MA support

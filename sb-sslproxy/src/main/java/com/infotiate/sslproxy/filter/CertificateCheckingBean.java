@@ -1,4 +1,4 @@
-package com.infotiate.openbanking.filter;
+package com.infotiate.sslproxy.filter;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -28,7 +28,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
 
-import com.infotiate.openbanking.config.ServerConfig;
+import com.infotiate.sslproxy.config.ServerConfig;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;

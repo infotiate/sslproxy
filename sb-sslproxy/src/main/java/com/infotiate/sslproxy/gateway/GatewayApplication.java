@@ -1,4 +1,4 @@
-package com.infotiate.openbanking.gateway;
+package com.infotiate.sslproxy.gateway;
 
 import java.security.Security;
 import java.util.Arrays;
@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.security.web.firewall.StrictHttpFirewall;
 
-import com.infotiate.openbanking.config.ServerConfig;
+import com.infotiate.sslproxy.config.ServerConfig;
 
 @SpringBootApplication
 @EnableZuulProxy

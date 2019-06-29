@@ -1,4 +1,4 @@
-package com.infotiate.openbanking.gateway;
+package com.infotiate.sslproxy.gateway;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package com.infotiate.openbanking.gateway;
+package com.infotiate.sslproxy.gateway;
 
 import org.apache.catalina.connector.Connector;
 import org.springframework.boot.web.embedded.tomcat.TomcatConnectorCustomizer;

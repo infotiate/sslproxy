@@ -1,4 +1,4 @@
-package com.infotiate.openbanking.config;
+package com.infotiate.sslproxy.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
